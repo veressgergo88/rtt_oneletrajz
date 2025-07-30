@@ -1,5 +1,5 @@
 import { personalInfo } from "../db/data";
-
+import profilkep from "../assets/images/profilkep.jpg"
 import { motion } from "motion/react";
 
 const PersonalSection = () => {
@@ -11,8 +11,8 @@ const PersonalSection = () => {
           animate={{ opacity: 1, rotate: 360 }}
           transition={{ duration: 1 }}
           className="h-50 rounded-full shadow-sm shadow-black"
-          src="src/assets/images/profilkep.jpg"
-          alt="cv_image"
+          src={profilkep}
+          alt="profilkep"
         />
       </div>
       <div className="mt-8 space-y-4 border-b border-gray-200 pb-4">
