@@ -1,5 +1,8 @@
 Stack:
 
+Bundle:
+- VITE
+
 Framework:
 - REACT 
 
