@@ -12,7 +12,7 @@ const Header = () => {
           {headerInfo.name}
         </h1>
       </div>
-      <div className="text-yellow-700">
+      <div className="text-yellow-700 px-8">
         <li className="flex items-center space-x-4">
           <FaHouseChimney />
           <span className="text-md italic">{headerInfo.location}</span>

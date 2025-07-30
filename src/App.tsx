@@ -16,7 +16,7 @@ function App() {
   return (
    <div className="bg-[#e6ebf2]">
     <div className="flex max-w-7xl mx-auto rounded shadow-md shadow-black">
-      <aside className={`bg-[#354763] flex flex-col ${isOpened ? "w-75" : "w-16"} shadow-lg shadow-black duration-300 ease-in-out fixed lg:static z-10 lg:z-0 h-screen lg:h-auto`}>
+      <aside className={`bg-[#354763] flex flex-col ${isOpened ? "w-75" : "w-16"} shadow-lg shadow-black duration-300 ease-in-out fixed lg:static z-10 lg:z-0 h-screen lg:h-auto overflow-y-auto`}>
         <div className="flex justify-end p-4">
           <button className="cursor-pointer" onClick={() => setIsOpened(!isOpened)}>
             {isOpened ?  <FaRegArrowAltCircleLeft size={30} color="#e5e7eb" /> : <FaRegArrowAltCircleRight size={30} color="#e5e7eb"/>}
