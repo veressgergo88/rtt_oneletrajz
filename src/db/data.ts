@@ -14,7 +14,7 @@ export const jobInfo = [
     {
         infoTitle: "Egyéni vállalkozó",
         infoDate: "2024 augusztus - ",
-        infoList: ["Mancs Műszak - kutya- és cicaszitter szolgáltatás", "Ételfutár - Foodora és Wolt"]
+        infoList: ["Mancs Műszak - kutya- és cicaszitter szolgáltatás"]
     },
     {
         infoTitle: "Repülőtéri Rendőr Igazgatóság / Humánigazgatási Szolgálat",

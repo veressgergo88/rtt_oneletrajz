@@ -36,7 +36,7 @@ const PersonalSection = () => {
         <h2 className="text-xl text-yellow-700 font-bold">
           REFERENCIA WEBOLDAL
         </h2>
-        <a href="https://www.mancsmuszak.hu" target="_blank" className="text-gray-200 text-lg hover:font-bold hover:underline">Mancs Műszak</a>
+        <a href="https://www.mancsmuszak.hu" target="_blank" className="text-gray-200 text-sm hover:font-bold hover:underline">https://www.mancsmuszak.hu</a>
       </div>
       <div className="mt-8 space-y-4 border-b border-gray-200 pb-4">
         <h2 className="text-xl text-yellow-700 font-bold">
@@ -45,7 +45,7 @@ const PersonalSection = () => {
         <ul className="list-disc px-6">
           <li className="text-sm font-bold text-gray-200">NEXT.JS, REACT NATIVE elsajátítása</li>
           <li className="text-sm font-bold text-gray-200">Saas alkalmazások készítése</li>
-          <li className="text-sm font-bold text-gray-200">Gépi tanulás / Mesterséges Intelligencia programozása</li>
+          <li className="text-sm font-bold text-gray-200">Machine Learning / Mesterséges Intelligencia programozása</li>
         </ul>
       </div>
     </>
