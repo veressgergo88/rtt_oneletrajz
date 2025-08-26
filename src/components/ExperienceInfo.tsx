@@ -1,11 +1,17 @@
-import type { Info } from "../types/types";
+import { jobInfo, educationInfo, sectionTitles } from "../db/data";
+
+import { useLanguageStore } from "../store/useLanguageStore";
 
 type ExperienceInfoProps = {
-  title: string;
-  infos: Info[];
+  titleKey: "experience" | "education"
 };
 
-const ExperienceInfo = ({ title, infos }: ExperienceInfoProps) => {
+const ExperienceInfo = ({ titleKey }: ExperienceInfoProps) => {
+  const { language } = useLanguageStore()
+
+  const title = titleKey === "experience" ? sectionTitles[language].experience : sectionTitles[language].education
+  const infos = titleKey === "experience" ? jobInfo[language] : educationInfo[language]
+
   return (
     <div className="text-[#354763]">
       <div className="border-b-2 border-gray-500 py-2">

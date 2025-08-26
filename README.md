@@ -18,3 +18,6 @@ Animáció:
 
 Ikonok:
 - React Icons
+
+State Management:
+- Zustand

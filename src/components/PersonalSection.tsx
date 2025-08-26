@@ -1,8 +1,15 @@
-import { personalInfo } from "../db/data";
 import profilkep from "../assets/images/profilkep.jpg"
+import { personalInfo, sectionTitles, plans } from "../db/data";
+
 import { motion } from "motion/react";
+import { useLanguageStore } from "../store/useLanguageStore";
 
 const PersonalSection = () => {
+  const { language } = useLanguageStore()
+  const title = sectionTitles[language]
+  const info = personalInfo[language]
+  const plan = plans[language]
+
   return (
     <>
       <div className="flex justify-center">
@@ -17,35 +24,35 @@ const PersonalSection = () => {
       </div>
       <div className="mt-8 space-y-4 border-b border-gray-200 pb-4">
         <h2 className="text-xl text-yellow-700 font-bold">
-          SZEMÉLYES INFORMÁCIÓK
+          {title.personal}
         </h2>
         <div>
           <h3 className="text-lg font-bold text-gray-200">Születési hely</h3>
           <p className="text-sm font-bold text-gray-200">
-            {personalInfo.birthLocation}
+            {info.birthLocation}
           </p>
         </div>
         <div>
           <h3 className="text-lg font-bold text-gray-200">Születési idő</h3>
           <p className="text-sm font-bold text-gray-200">
-            {personalInfo.birthday}
+            {info.birthday}
           </p>
         </div>
       </div>
       <div className="mt-8 space-y-4 border-b border-gray-200 pb-4">
         <h2 className="text-xl text-yellow-700 font-bold">
-          REFERENCIA WEBOLDAL
+          {title.website}
         </h2>
         <a href="https://www.mancsmuszak.hu" target="_blank" className="text-gray-200 text-sm hover:font-bold hover:underline">https://www.mancsmuszak.hu</a>
       </div>
       <div className="mt-8 space-y-4 border-b border-gray-200 pb-4">
         <h2 className="text-xl text-yellow-700 font-bold">
-          TERVEK
+          {title.plans}
         </h2>
         <ul className="list-disc px-6">
-          <li className="text-sm font-bold text-gray-200">NEXT.JS, REACT NATIVE elsajátítása</li>
-          <li className="text-sm font-bold text-gray-200">Saas alkalmazások készítése</li>
-          <li className="text-sm font-bold text-gray-200">Machine Learning / Mesterséges Intelligencia programozása</li>
+          {plan.map((list, i) => (
+            <li className="text-sm font-bold text-gray-200" key={i}>{list}</li>
+          ))}
         </ul>
       </div>
     </>
