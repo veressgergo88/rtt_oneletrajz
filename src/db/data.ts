@@ -2,11 +2,15 @@ import type { Education, Header, Job, Language, Personal, Skill, Title, Plan } f
 
 export const personalInfo: Personal = {
   hu: {
+    birthdayTitle: "Születési idő",
     birthday: "1988.10.09",
+    birthLocationTitle: "Születési hely",
     birthLocation: "Sátoraljaújhely",
   },
   en: {
+    birthdayTitle: "Date of birth",
     birthday: "09.10.1988",
+    birthLocationTitle: "Place of birth",
     birthLocation: "Sátoraljaújhely",
   },
 };

@@ -1,10 +1,14 @@
 export type Personal = {
   hu: {
+    birthdayTitle: string,
     birthday: string,
+    birthLocationTitle: string
     birthLocation: string
   },
   en: {
+    birthdayTitle: string,
     birthday: string,
+    birthLocationTitle: string
     birthLocation: string
   }
 }

@@ -27,13 +27,13 @@ const PersonalSection = () => {
           {title.personal}
         </h2>
         <div>
-          <h3 className="text-lg font-bold text-gray-200">Születési hely</h3>
+          <h3 className="text-lg font-bold text-gray-200">{info.birthLocationTitle}</h3>
           <p className="text-sm font-bold text-gray-200">
             {info.birthLocation}
           </p>
         </div>
         <div>
-          <h3 className="text-lg font-bold text-gray-200">Születési idő</h3>
+          <h3 className="text-lg font-bold text-gray-200">{info.birthdayTitle}</h3>
           <p className="text-sm font-bold text-gray-200">
             {info.birthday}
           </p>
